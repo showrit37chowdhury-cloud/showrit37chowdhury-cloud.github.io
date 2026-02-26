@@ -1,77 +1,23 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Showrit Chowdhury</title>
-    <style>
-        /* Body background set to black as requested */
-        body { 
-            font-family: 'Segoe UI', sans-serif; 
-            margin: 0; 
-            line-height: 1.6; 
-            color: white; 
-            background-color: #000000; 
-        }
-
-        /* Banner section replacing the blue header */
-        .banner {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Profile picture styling */
-        .profile-container {
-            text-align: center;
-            margin-top: -75px; /* Pulls photo up slightly into the banner area */
-        }
-
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #000;
-            object-fit: cover;
-        }
-
-        section { 
-            padding: 3rem 2rem; 
-            max-width: 800px; 
-            margin: auto; 
-            text-align: center;
-        }
-
-        .feature-box { 
-            border-left: 5px solid #ff9900; 
-            background: #1a1a1a; 
-            padding: 20px; 
-            margin: 20px 0; 
-            text-align: left;
-        }
-
-        h2, h3 { color: #ff9900; }
-        p { color: #cccccc; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <img src="banner.jpg" alt="Showrit Chowdhury Banner" class="banner">
+    <header class="site-banner">
+        <img src="banner.jpg" alt="Showrit Chowdhury Banner" class="banner-img">
+    </header>
 
-    <div class="profile-container">
-        <img src="profile.jpg" alt="Showrit" class="profile-pic">
-    </div>
-
-    <section>
+    <main class="content-area">
         <h2>About Me</h2>
         <p>I've officially launched my first website on GitHub! This is just the beginning of my journey.</p>
         
-        <div class="feature-box">
+        <div class="mission-box">
             <h3>My Mission</h3>
             <p>I am building this space to share my projects and ideas with the world.</p>
         </div>
-    </section>
+    </main>
 
-    </body>
+</body>
 </html>
