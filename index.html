@@ -1,23 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showrit Chowdhury</title>
+    <style>
+        /* Base Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Makes the lower part black */
+            color: #ffffff; /* Sets text to white for contrast */
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        /* Banner styling to match your 2nd photo layout */
+        .banner-container {
+            width: 100%;
+            display: block;
+            line-height: 0; 
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Content section below the banner */
+        .content {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .about-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .mission-box {
+            border-left: 4px solid #007bff; /* Blue accent from your photo */
+            padding-left: 20px;
+            margin-top: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 0;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
 
-    <header class="site-banner">
-        <img src="banner.jpg" alt="Showrit Chowdhury Banner" class="banner-img">
-    </header>
+    <div class="banner-container">
+        <img src="banner.jpeg" alt="Showrit Chowdhury Banner">
+    </div>
 
-    <main class="content-area">
-        <h2>About Me</h2>
-        <p>I've officially launched my first website on GitHub! This is just the beginning of my journey.</p>
-        
+    <div class="content">
+        <div class="about-me">
+            <h2 class="about-title">About Me</h2>
+            <p>I've officially launched my first website on GitHub! This is just the beginning of my journey.</p>
+        </div>
+
         <div class="mission-box">
             <h3>My Mission</h3>
             <p>I am building this space to share my projects and ideas with the world.</p>
         </div>
-    </main>
-
+    </div>
 </body>
 </html>
