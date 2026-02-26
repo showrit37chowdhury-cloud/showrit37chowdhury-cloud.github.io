@@ -9,41 +9,47 @@
         body, html {
             margin: 0;
             padding: 0;
-            background-color: #000000; /* Makes the lower part black */
-            color: #ffffff; /* Sets text to white for contrast */
+            background-color: #000000; 
+            color: #ffffff; 
             font-family: 'Segoe UI', Arial, sans-serif;
         }
 
-        /* Banner styling to match your 2nd photo layout */
+        /* Updated Banner Styling: Set a max-height so it doesn't take the whole screen */
         .banner-container {
             width: 100%;
-            display: block;
-            line-height: 0; 
+            max-height: 400px; /* Limits the height of the banner */
+            overflow: hidden;   /* Ensures the image stays within the container */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .banner-container img {
             width: 100%;
             height: auto;
-            display: block;
+            object-fit: cover; /* Keeps image looking good while resizing */
         }
 
         /* Content section below the banner */
         .content {
-            padding: 60px 20px;
+            padding: 40px 20px;
             max-width: 800px;
             margin: 0 auto;
             text-align: left;
+            /* Changed text color to Orange */
+            color: #FFA500; 
         }
 
         .about-title {
             font-size: 28px;
             font-weight: bold;
             margin-bottom: 15px;
-            color: #ffffff;
+            /* Heading color in Orange */
+            color: #FFA500; 
         }
 
         .mission-box {
-            border-left: 4px solid #007bff; /* Blue accent from your photo */
+            border-left: 4px solid #007bff; 
             padding-left: 20px;
             margin-top: 40px;
         }
